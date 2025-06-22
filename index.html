@@ -4,194 +4,161 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Reality Hits - Board Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #007acc;
+      --accent: #f9f9f9;
+      --text: #222;
+    }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0; padding: 0; background: #f5f5f5; color: #222;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: var(--accent);
+      color: var(--text);
     }
     header {
-      background: #007acc;
+      background: var(--primary);
       color: white;
-      padding: 1rem;
       text-align: center;
+      padding: 2rem 1rem;
     }
-    main {
-      max-width: 900px;
-      margin: 1rem auto;
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px #ccc;
-    }
-    h1, h2 {
-      color: #007acc;
-    }
-    section {
-      margin-bottom: 1.5rem;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    li {
+    header h1 {
+      font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #555;
-      margin: 2rem 0;
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      border-left: 5px solid var(--primary);
+      padding-left: 0.6rem;
+      color: var(--primary);
     }
     .state-section {
       background: #eef6fb;
-      padding: 0.8rem;
-      border-radius: 6px;
+      padding: 1rem;
+      border-radius: 8px;
       margin-bottom: 1rem;
     }
     .job-title {
       font-weight: bold;
-      margin-top: 0.8rem;
-    }
-    .disasters, .positives {
-      margin-left: 1rem;
-    }
-    form label {
-      display: block;
-      margin-top: 0.8rem;
-      font-weight: 600;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 0.5rem;
-      margin-top: 0.2rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 1rem;
-      box-sizing: border-box;
-    }
-    form button {
       margin-top: 1rem;
-      background: #007acc;
-      color: white;
-      padding: 0.7rem 1.5rem;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
+    }
+    ul {
+      padding-left: 1rem;
+      list-style: disc;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
       font-size: 1rem;
     }
-    form button:hover {
+    button {
+      background: var(--primary);
+      color: white;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
       background: #005fa3;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
 <header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Exclamation_mark_red.svg/1024px-Exclamation_mark_red.svg.png" 
+       alt="Reality Hits Logo" 
+       style="height: 80px; margin-bottom: 1rem;" />
   <h1>Reality Hits</h1>
-  <p>Natural disasters based per state — a fun, electrifying, and risky board game</p>
+  <p>The board game where disasters strike and the strong survive.</p>
 </header>
 
 <main>
   <section>
-    <p><strong>Description:</strong> Reality Hits is a game focused on many natural disasters based per state. This fun, electrifying and risky game will have you on the edge of your seat.</p>
-    <p>Several players will compete to see who can acquire the most money. They may face many obstacles on their journey. In the end, "Reality always Hits". Will you survive?</p>
+    <h2>About the Game</h2>
+    <p><strong>Reality Hits</strong> is a board game focused on natural disasters by state. Compete with other players to earn the most money while navigating real-world events. Obstacles await, but so do opportunities. In the end, "Reality always Hits." Will you survive?</p>
     <p><em>Available online until further notice.</em></p>
   </section>
 
   <section>
-    <h2>Players & States</h2>
+    <h2>Characters & States</h2>
 
     <div class="state-section">
-      <h3>Players of the game</h3>
-      <div>
-        <div class="job-title">Doctor</div>
-        <ul>
-          <li><strong>Disaster:</strong> malpractice suit, sickness</li>
-          <li><strong>Positive:</strong> outbreak, accidents</li>
-        </ul>
-      </div>
-      <div>
-        <div class="job-title">Restaurant Owner</div>
-        <ul>
-          <li><strong>Disaster:</strong> bad critic, bad sanitation grade</li>
-          <li><strong>Positive:</strong> good critic, good sanitation grade</li>
-        </ul>
-      </div>
-      <div>
-        <div class="job-title">Fireman</div>
-        <ul>
-          <li><strong>Disaster:</strong> no fires, old equipment</li>
-          <li><strong>Positive:</strong> wildfires, new equipment</li>
-        </ul>
-      </div>
-      <div>
-        <div class="job-title">Lawyer</div>
-        <ul>
-          <li><strong>Disaster:</strong> losing cases, bad review</li>
-          <li><strong>Positive:</strong> winning cases, good reviews</li>
-        </ul>
-      </div>
-      <div>
-        <div class="job-title">Realtor</div>
-        <ul>
-          <li><strong>Disaster:</strong> interest rate increase, no homes for sale</li>
-          <li><strong>Positive:</strong> interest rate decrease, more houses built</li>
-        </ul>
-      </div>
+      <h3>Core Roles</h3>
+      <div class="job-title">Doctor</div>
+      <ul><li>Disasters: Malpractice suit, sickness</li><li>Positives: Outbreak, accidents</li></ul>
+
+      <div class="job-title">Restaurant Owner</div>
+      <ul><li>Disasters: Bad critic, bad sanitation grade</li><li>Positives: Good critic, good sanitation grade</li></ul>
+
+      <div class="job-title">Fireman</div>
+      <ul><li>Disasters: No fires, old equipment</li><li>Positives: Wildfires, new equipment</li></ul>
+
+      <div class="job-title">Lawyer</div>
+      <ul><li>Disasters: Losing cases, bad review</li><li>Positives: Winning cases, good reviews</li></ul>
+
+      <div class="job-title">Realtor</div>
+      <ul><li>Disasters: Interest rate increase, no homes for sale</li><li>Positives: Interest rate decrease, new houses built</li></ul>
     </div>
 
     <div class="state-section">
       <h3>NC - Naturally Country</h3>
       <div class="job-title">Farmer</div>
-      <ul>
-        <li><strong>Natural disasters:</strong> hurricanes, floods, drought, bug infestation</li>
-        <li><strong>Positive:</strong> good weather, growth serum</li>
-      </ul>
+      <ul><li>Disasters: Hurricanes, floods, drought, infestation</li><li>Positives: Good weather, growth serum</li></ul>
     </div>
 
     <div class="state-section">
       <h3>TX - Total Xeric</h3>
-      <div class="job-title">Club Owner (rodeo)</div>
-      <ul>
-        <li><strong>Natural disasters:</strong> police bust, alcohol storage, dust storms, tornados</li>
-        <li><strong>Positive:</strong> celebrity entertainment, decrease vendor prices</li>
-      </ul>
+      <div class="job-title">Club Owner (Rodeo)</div>
+      <ul><li>Disasters: Police bust, dust storms, tornados</li><li>Positives: Celebrity show, vendor deals</li></ul>
     </div>
 
     <div class="state-section">
-      <h3>New York - New You</h3>
+      <h3>NY - New You</h3>
       <div class="job-title">Police</div>
-      <ul>
-        <li><strong>Disasters:</strong> law suit, world peace, blizzards, hurricane</li>
-        <li><strong>Positive:</strong> drug bust, new interstate</li>
-      </ul>
+      <ul><li>Disasters: Lawsuit, blizzards, hurricane</li><li>Positives: Drug bust, new interstate</li></ul>
     </div>
 
     <div class="state-section">
       <h3>FL - Fantasy Land</h3>
       <div class="job-title">Disco Club Owner</div>
-      <ul>
-        <li><strong>Disasters:</strong> hurricanes, tropical storms, police bust, alcohol shortage</li>
-        <li><strong>Positive:</strong> celebrity entertainment, decrease vendor pricing</li>
-      </ul>
+      <ul><li>Disasters: Storms, police bust, alcohol shortage</li><li>Positives: Celebrity appearance, vendor discounts</li></ul>
     </div>
 
     <div class="state-section">
       <h3>LA - Living Amour</h3>
       <div class="job-title">Fisherman</div>
-      <ul>
-        <li><strong>Disasters:</strong> hurricanes, floods, water contamination, boat damage</li>
-        <li><strong>Positive:</strong> good weather, increased water level</li>
-      </ul>
+      <ul><li>Disasters: Floods, contamination, boat damage</li><li>Positives: Good weather, high water levels</li></ul>
     </div>
 
     <div class="state-section">
-      <h3>Extra Jobs</h3>
-      <ul>
-        <li><strong>Pharmaceutical, Lottery Worker</strong></li>
-        <li><strong>Disasters:</strong> expired technology, theft, fire, competition</li>
-        <li><strong>Positive:</strong> advertisement, investing, bilingual staff, expansion</li>
-      </ul>
+      <h3>Extra Roles</h3>
+      <div class="job-title">Pharmaceutical, Lottery Worker</div>
+      <ul><li>Disasters: Expired tech, theft, fire, competition</li><li>Positives: Advertising, investment, expansion</li></ul>
     </div>
   </section>
 
@@ -207,13 +174,14 @@
       <label for="message">Message:</label>
       <textarea id="message" name="message" rows="5" required></textarea>
 
-      <button type="submit">Send</button>
+      <button type="submit">Send Message</button>
     </form>
   </section>
 </main>
 
 <footer>
-  <p>© 2-16-2025 by Anthony E. Hyde, Arcenia M. Nickles, Trinity C. Mitchell, Frank Moye III</p>
+  <p><a href="tos.html">Terms of Service</a></p>
+  <p>&copy; 2025 Reality Hits. Created by Anthony E. Hyde, Arcenia M. Nickles, Trinity C. Mitchell, Frank Moye III</p>
 </footer>
 
 </body>
