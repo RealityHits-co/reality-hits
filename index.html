@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reality Hits - Board Game</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0; background: #f5f5f5; color: #222;
+    }
+    header {
+      background: #007acc;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 1rem auto;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    h1, h2 {
+      color: #007acc;
+    }
+    section {
+      margin-bottom: 1.5rem;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+      margin: 2rem 0;
+    }
+    .state-section {
+      background: #eef6fb;
+      padding: 0.8rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+    .job-title {
+      font-weight: bold;
+      margin-top: 0.8rem;
+    }
+    .disasters, .positives {
+      margin-left: 1rem;
+    }
+    form label {
+      display: block;
+      margin-top: 0.8rem;
+      font-weight: 600;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.2rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    form button {
+      margin-top: 1rem;
+      background: #007acc;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    form button:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Reality Hits</h1>
+  <p>Natural disasters based per state — a fun, electrifying, and risky board game</p>
+</header>
+
+<main>
+  <section>
+    <p><strong>Description:</strong> Reality Hits is a game focused on many natural disasters based per state. This fun, electrifying and risky game will have you on the edge of your seat.</p>
+    <p>Several players will compete to see who can acquire the most money. They may face many obstacles on their journey. In the end, "Reality always Hits". Will you survive?</p>
+    <p><em>Available online until further notice.</em></p>
+  </section>
+
+  <section>
+    <h2>Players & States</h2>
+
+    <div class="state-section">
+      <h3>Players of the game</h3>
+      <div>
+        <div class="job-title">Doctor</div>
+        <ul>
+          <li><strong>Disaster:</strong> malpractice suit, sickness</li>
+          <li><strong>Positive:</strong> outbreak, accidents</li>
+        </ul>
+      </div>
+      <div>
+        <div class="job-title">Restaurant Owner</div>
+        <ul>
+          <li><strong>Disaster:</strong> bad critic, bad sanitation grade</li>
+          <li><strong>Positive:</strong> good critic, good sanitation grade</li>
+        </ul>
+      </div>
+      <div>
+        <div class="job-title">Fireman</div>
+        <ul>
+          <li><strong>Disaster:</strong> no fires, old equipment</li>
+          <li><strong>Positive:</strong> wildfires, new equipment</li>
+        </ul>
+      </div>
+      <div>
+        <div class="job-title">Lawyer</div>
+        <ul>
+          <li><strong>Disaster:</strong> losing cases, bad review</li>
+          <li><strong>Positive:</strong> winning cases, good reviews</li>
+        </ul>
+      </div>
+      <div>
+        <div class="job-title">Realtor</div>
+        <ul>
+          <li><strong>Disaster:</strong> interest rate increase, no homes for sale</li>
+          <li><strong>Positive:</strong> interest rate decrease, more houses built</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="state-section">
+      <h3>NC - Naturally Country</h3>
+      <div class="job-title">Farmer</div>
+      <ul>
+        <li><strong>Natural disasters:</strong> hurricanes, floods, drought, bug infestation</li>
+        <li><strong>Positive:</strong> good weather, growth serum</li>
+      </ul>
+    </div>
+
+    <div class="state-section">
+      <h3>TX - Total Xeric</h3>
+      <div class="job-title">Club Owner (rodeo)</div>
+      <ul>
+        <li><strong>Natural disasters:</strong> police bust, alcohol storage, dust storms, tornados</li>
+        <li><strong>Positive:</strong> celebrity entertainment, decrease vendor prices</li>
+      </ul>
+    </div>
+
+    <div class="state-section">
+      <h3>New York - New You</h3>
+      <div class="job-title">Police</div>
+      <ul>
+        <li><strong>Disasters:</strong> law suit, world peace, blizzards, hurricane</li>
+        <li><strong>Positive:</strong> drug bust, new interstate</li>
+      </ul>
+    </div>
+
+    <div class="state-section">
+      <h3>FL - Fantasy Land</h3>
+      <div class="job-title">Disco Club Owner</div>
+      <ul>
+        <li><strong>Disasters:</strong> hurricanes, tropical storms, police bust, alcohol shortage</li>
+        <li><strong>Positive:</strong> celebrity entertainment, decrease vendor pricing</li>
+      </ul>
+    </div>
+
+    <div class="state-section">
+      <h3>LA - Living Amour</h3>
+      <div class="job-title">Fisherman</div>
+      <ul>
+        <li><strong>Disasters:</strong> hurricanes, floods, water contamination, boat damage</li>
+        <li><strong>Positive:</strong> good weather, increased water level</li>
+      </ul>
+    </div>
+
+    <div class="state-section">
+      <h3>Extra Jobs</h3>
+      <ul>
+        <li><strong>Pharmaceutical, Lottery Worker</strong></li>
+        <li><strong>Disasters:</strong> expired technology, theft, fire, competition</li>
+        <li><strong>Positive:</strong> advertisement, investing, bilingual staff, expansion</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>© 2-16-2025 by Anthony E. Hyde, Arcenia M. Nickles, Trinity C. Mitchell, Frank Moye III</p>
+</footer>
+
+</body>
+</html>
