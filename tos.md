@@ -1,11 +1,11 @@
-# Terms of Service
-By using this site, you agree to the terms below.
+---
+title: Terms of Service
+layout: default
+---
 
-**1. Ownership**
-This site is © 2025 Reality Hits creators.
+# 📜 Terms of Service
 
-**2. Use**
-The content is for viewing purposes only.
+**1. Ownership**  
+© 2025 by Anthony E. Hyde, Arcenia M. Nickles, Trinity C. Mitchell, Frank Moye III.
 
-**3. Updates**
-We may update terms anytime.
+(continue TOS content from earlier)
