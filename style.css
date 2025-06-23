@@ -1,11 +1,10 @@
-
 :root {
-  --primary: #2c3e50;
-  --secondary: #3498db;
-  --accent: #f3f6fb;
+  --primary: #1e1e2f;
+  --secondary: #9f7aea;
+  --accent: #f8f9fc;
   --text: #2d3436;
   --card-bg: #ffffff;
-  --highlight: #16a085;
+  --highlight: #5a67d8;
   --shadow: rgba(0, 0, 0, 0.1);
   --radius: 12px;
 }
@@ -14,7 +13,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  background: linear-gradient(145deg, #f5f7fa, #c3cfe2);
   color: var(--text);
 }
 
